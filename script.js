@@ -30,7 +30,8 @@ $$('.nav-dropdown').forEach((dropdown) => {
 const openPricingDialog = (dialogId) => {
   const dialog = document.getElementById(dialogId);
   if (!dialog?.matches('.pricing-dialog')) return;
-  $$('.pricing-dialog[open]').forEach((openDialog) => openDialog.close());
+  // Also close the "Who we work with" popup when one of its package buttons is used
+  $$('.pricing-dialog[open], .content-dialog[open]').forEach((openDialog) => openDialog.close());
   dialog.showModal();
 };
 
@@ -53,7 +54,7 @@ $$('.pricing-dialog').forEach((dialog) => {
   });
 });
 
-const studioDialogIds = ['work', 'showcase', 'packages'];
+const studioDialogIds = ['work', 'showcase', 'packages', 'solutions'];
 
 const openStudioDialog = (dialogId) => {
   const dialog = document.getElementById(dialogId);

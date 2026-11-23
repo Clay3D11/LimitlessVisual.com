@@ -34,7 +34,7 @@
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="#home">Home</a>
         <a class="about-studio-tag" href="#studio">About</a>
-        <a href="#Explore">Explore</a>
+        <a href="#solutions">Explore</a>
         <details class="nav-dropdown">
           <summary>Studio</summary>
           <div>
@@ -108,6 +108,9 @@
               <button class="studio-info-tag about-studio-tag" type="button" aria-haspopup="dialog" aria-controls="studio">
                 <span aria-hidden="true">+</span> About the studio
               </button>
+              <button class="studio-info-tag" type="button" data-studio-target="solutions" aria-haspopup="dialog" aria-controls="solutions">
+                <span aria-hidden="true">+</span> Who we work with
+              </button>
             </div>
 
             <!-- <ul class="hero-proof" aria-label="Why clients choose us">
@@ -140,78 +143,6 @@
           <img src="assets/img/icons/pr.png" alt="Premiere Pro" loading="lazy" />
           <img src="assets/img/icons/Blender.png" alt="Blender" loading="lazy" />
           <img src="assets/img/icons/react.png" alt="React" loading="lazy" />
-        </div>
-      </section>
-
-      <!-- ============ Who we serve ============ -->
-      <section class="section" id="solutions">
-        <div id="Explore" class="section-heading reveal-ready">
-          <p class="eyebrow">Who we work with</p>
-          <h2>Built for people who sell with visuals.</h2>
-          <p class="section-intro">Pick your lane and go straight to packages made for it.</p>
-        </div>
-
-        <div class="segment-grid">
-          <article class="segment-card reveal-ready">
-            <p class="eyebrow">Realtors</p>
-            <h3>Luxury Real Estate Marketing</h3>
-            <!-- <p>Cinematic property tours, scroll-stopping reels, and drone showcases that attract buyers and elevate listings.</p> -->
-            <ul class="check-list">
-              <li>Luxury listing videos</li>
-              <li>Drone cinematics</li>
-              <li>walkthroughs</li>
-              <li>Agent branding</li>
-            </ul>
-            <p class="segment-price">starting <strong>$299</strong></p>
-            <button class="button primary" type="button" data-pricing-target="pricing-realtors">See realtor packages</button>
-          </article>
-
-
-          <article class="segment-card reveal-ready">
-            <p class="eyebrow">Artists</p>
-            <h3>Music Videos</h3>
-            <!-- <p>Performance edits and visual storytelling crafted to match your sound and keep your audience watching.</p> -->
-            <ul class="check-list">
-              <li>Beat-synced cuts</li>
-              <li>Cinematic Color</li>
-              <li>Visual effects &amp; VFX</li>
-              <li>Social media versions</li>
-            </ul>
-            <p class="segment-price">starting <strong>$799</strong></p>
-            <button class="button primary" type="button" data-pricing-target="pricing-artists">See artist packages</button>
-          </article>
-
-
-
-
-          <article class="segment-card reveal-ready">
-            <p class="eyebrow">Brands</p>
-            <h3>Ads &amp; Campaigns</h3>
-            <!-- <p>Short-form ads, product promos, and social-first campaigns crafted to capture attention and drive results.</p> -->
-            <ul class="check-list">
-              <li>Short-Form video ads</li>
-              <li>Media Campaigns</li>
-              <li>Product Promos</li>
-              <li>Brand launch videos</li>
-            </ul>
-            <p class="segment-price">starting <strong>$550</strong></p>
-            <button class="button primary" type="button" data-pricing-target="pricing-campaigns">See campaign packages</button>
-          </article>
-          
-
-          <article class="segment-card reveal-ready">
-            <p class="eyebrow">Agencies</p>
-            <h3>Creative Partnerships</h3>
-            <!-- <p>Premium production behind your agency, so you deliver standout campaigns without growing your team.</p> -->
-            <ul class="check-list">
-              <li>Creative direction</li>
-              <li>Video, Motion &amp; VFX</li>
-              <li>Multi-platform</li>
-              <li>Scope &amp; Timeline</li>
-            </ul>
-            <p class="segment-price"><strong>Custom</strong> plan</p>
-            <button class="button primary" type="button" data-pricing-target="pricing-agencies">Build a partnership</button>
-          </article>
         </div>
       </section>
 
@@ -484,6 +415,83 @@
             <ul class="check-list"><li>Performance video edits</li><li>Beat-synced cuts</li><li>Cinematic color grading</li><li>Visual effects &amp; VFX</li><li>Motion graphics</li><li>Artist branding</li><li>Social media versions</li><li>4K delivery</li></ul>
           </div>
         </div>
+      </div>
+    </dialog>
+
+    <!-- Who we work with: opened by the "+ Who we work with" hero tag and the Explore nav link -->
+    <dialog class="content-dialog" id="solutions" aria-labelledby="solutions-dialog-title">
+      <div class="content-dialog-shell">
+        <button class="content-dialog-close" type="button" aria-label="Close who we work with">&times;</button>
+        <section>
+            <div class="section-heading reveal-ready">
+              <p class="eyebrow">Who we work with</p>
+              <h2 id="solutions-dialog-title">Built for people who sell with visuals.</h2>
+              <p class="section-intro">Pick your lane and go straight to packages made for it.</p>
+            </div>
+    
+            <div class="segment-grid">
+              <article class="segment-card reveal-ready">
+                <p class="eyebrow">Realtors</p>
+                <h3>Luxury Real Estate Marketing</h3>
+                <!-- <p>Cinematic property tours, scroll-stopping reels, and drone showcases that attract buyers and elevate listings.</p> -->
+                <ul class="check-list">
+                  <li>Luxury listing videos</li>
+                  <li>Drone cinematics</li>
+                  <li>walkthroughs</li>
+                  <li>Agent branding</li>
+                </ul>
+                <p class="segment-price">starting <strong>$299</strong></p>
+                <button class="button primary" type="button" data-pricing-target="pricing-realtors">See realtor packages</button>
+              </article>
+    
+    
+              <article class="segment-card reveal-ready">
+                <p class="eyebrow">Artists</p>
+                <h3>Music Videos</h3>
+                <!-- <p>Performance edits and visual storytelling crafted to match your sound and keep your audience watching.</p> -->
+                <ul class="check-list">
+                  <li>Beat-synced cuts</li>
+                  <li>Cinematic Color</li>
+                  <li>Visual effects &amp; VFX</li>
+                  <li>Social media versions</li>
+                </ul>
+                <p class="segment-price">starting <strong>$799</strong></p>
+                <button class="button primary" type="button" data-pricing-target="pricing-artists">See artist packages</button>
+              </article>
+    
+    
+    
+    
+              <article class="segment-card reveal-ready">
+                <p class="eyebrow">Brands</p>
+                <h3>Ads &amp; Campaigns</h3>
+                <!-- <p>Short-form ads, product promos, and social-first campaigns crafted to capture attention and drive results.</p> -->
+                <ul class="check-list">
+                  <li>Short-Form video ads</li>
+                  <li>Media Campaigns</li>
+                  <li>Product Promos</li>
+                  <li>Brand launch videos</li>
+                </ul>
+                <p class="segment-price">starting <strong>$550</strong></p>
+                <button class="button primary" type="button" data-pricing-target="pricing-campaigns">See campaign packages</button>
+              </article>
+              
+    
+              <article class="segment-card reveal-ready">
+                <p class="eyebrow">Agencies</p>
+                <h3>Creative Partnerships</h3>
+                <!-- <p>Premium production behind your agency, so you deliver standout campaigns without growing your team.</p> -->
+                <ul class="check-list">
+                  <li>Creative direction</li>
+                  <li>Video, Motion &amp; VFX</li>
+                  <li>Multi-platform</li>
+                  <li>Scope &amp; Timeline</li>
+                </ul>
+                <p class="segment-price"><strong>Custom</strong> plan</p>
+                <button class="button primary" type="button" data-pricing-target="pricing-agencies">Build a partnership</button>
+              </article>
+            </div>
+        </section>
       </div>
     </dialog>
 
